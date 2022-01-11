@@ -51,9 +51,11 @@ class Player:
             print(self, "ante'd up.")
         else:
             if self.current_bet > self.table.current_bet:
-                print(self, "raised by", amount, "to", self.current_bet)
+                print(
+                    f"{self} raised by ${self.current_bet - self.table.current_bet} to ${self.current_bet}."
+                )
             else:
-                print(self, "called to", self.current_bet)
+                print(f"{self} called to ${self.current_bet}.")
 
         self.table.current_bet = max(self.table.current_bet, self.current_bet)
         self.table.pot += amount
