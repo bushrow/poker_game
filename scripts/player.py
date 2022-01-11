@@ -51,9 +51,12 @@ class Player:
             print(self, "ante'd up.")
         else:
             if self.current_bet > self.table.current_bet:
-                print(
-                    f"{self} raised by ${self.current_bet - self.table.current_bet} to ${self.current_bet}."
-                )
+                if self.table.current_bet == 0:
+                    print(f"{self} bet ${self.current_bet}.")
+                else:
+                    print(
+                        f"{self} raised by ${self.current_bet - self.table.current_bet} to ${self.current_bet}."
+                    )
             else:
                 print(f"{self} called to ${self.current_bet}.")
 
@@ -70,7 +73,7 @@ class Player:
                     bet_amt = self.table.current_bet - self.current_bet
                 elif action == "r":
                     # raise
-                    bet_amt = int(input("Raise amount: ")) + self.table.current_bet
+                    bet_amt = int(input("Raise amount: $")) + self.table.current_bet
                 else:
                     # fold
                     print("You folded.")
@@ -81,7 +84,7 @@ class Player:
 
                 if action == "b":
                     # bet
-                    bet_amt = int(input("Bet amount: "))
+                    bet_amt = int(input("Bet amount: $"))
                 elif action == "k":
                     # check
                     print("You checked.")

@@ -106,6 +106,6 @@ class Table:
     def distribute_pot(self, winners):
         for winner in winners:
             winner[0].bank_roll += self.pot / len(winners)
-            print(f"{winner[0]}:\t{winner[1]} ({winner[2]})")
+            print(f"{(str(winner[0])+':').ljust(25)} {winner[1]} ({winner[2]})")
 
         self.pot = 0
