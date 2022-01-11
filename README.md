@@ -8,6 +8,12 @@ Currently playable via CLI; planning to develop a web app to provide a better UI
 
 Yes, the other player names are from Yellowstone. Currently on Season 3 so no spoilers please.  
 
+## Instructions
+ 1. Clone the repo
+ 2. Run `python play_texas_holdem.py` from the top level of the directory
+ 3. ???
+ 4. $$$ Profit $$$
+
 ## TO-DO:
  - Comment code (top priority)
  - Improve AI from random decision-making
