@@ -18,11 +18,11 @@ def play_round(table, real_time=False, duration=5):
     table.deal()
 
     if real_time:
-        for n, h in table.player_hands.items():
-            if n.name == "You":
-                print(f"{n}:\t{h}")
+        for p, h in table.player_hands.items():
+            if p.name == "You":
+                print(f"{(str(p)+':').ljust(25)} {h}")
             else:
-                print(f"{n}:\tXX XX")
+                print(f"{(str(p)+':').ljust(25)} XX XX")
         print()
 
     else:
@@ -57,8 +57,8 @@ def play_round(table, real_time=False, duration=5):
 
     if real_time:
         print("Pocket Cards:")
-        for n, h in table.player_hands.items():
-            print(f"{n}:\t{h}")
+        for p, h in table.player_hands.items():
+            print(f"{(str(p)+':').ljust(25)} {h}")
         print()
 
     print("Competing Hands:")
@@ -67,7 +67,7 @@ def play_round(table, real_time=False, duration=5):
         if p.folded:
             continue
         bh, label = h.best_hand(table.cards_showing)
-        print(f"{p}:\t{bh} ({label})")
+        print(f"{(str(p)+':').ljust(25)} {bh} ({label})")
         res = compare_hands(bh.cards, winners[0][1].cards)
         if res:
             winners = [(p, bh, label)]
@@ -75,6 +75,7 @@ def play_round(table, real_time=False, duration=5):
             winners.append((p, bh, label))
 
     print()
+    print(f"Final Pot: ${table.pot}")
     print("Winner(s):")
     table.distribute_pot(winners)
 
