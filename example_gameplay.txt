@@ -1,0 +1,66 @@
+❯ python play_texas_holdem.py 
+
+John - $995 (SB) bet the blind.
+Kayce - $990 (BB) bet the blind.
+
+You - $1000 (D):        JD KD
+John - $995 (SB):       XX XX
+Kayce - $990 (BB):      XX XX
+Jamie - $1000:          XX XX
+Beth - $1000:           XX XX
+Rip - $1000:            XX XX
+
+Jamie - $990 called to 10
+Beth - $990 called to 10
+Rip - $990 called to 10
+Call (c), Raise (r), or Fold (f): r
+Raise amount: 25
+You - $965 (D) raised by 25 to 35
+John - $965 (SB) called to 35
+Kayce - $990 (BB) folded.
+Jamie - $990 folded.
+Beth - $965 called to 35
+Rip - $965 called to 35
+
+['7H', '4D', '9C']              (Flop) 
+
+John - $965 (SB) checked.
+Beth - $965 checked.
+Rip - $965 checked.
+Check (k) or Bet (b): k
+You checked.
+
+['7H', '4D', '9C', 'JH']        (Turn) 
+
+John - $965 (SB) checked.
+Beth - $965 checked.
+Rip - $945 raised by 20 to 20
+Call (c), Raise (r), or Fold (f): c
+You - $945 (D) called to 20
+John - $965 (SB) folded.
+Beth - $945 called to 20
+
+['7H', '4D', '9C', 'JH', '7S']  (River) 
+
+Beth - $920 raised by 25 to 25
+Rip - $920 called to 25
+Call (c), Raise (r), or Fold (f): c
+You - $920 (D) called to 25
+
+Pocket Cards:
+You - $920 (D):         JD KD
+John - $965 (SB):       QS AH
+Kayce - $990 (BB):      TC JS
+Jamie - $990:           5C 6H
+Beth - $920:            2D JC
+Rip - $920:             2S 8C
+
+Competing Hands:
+You - $920 (D): 7H 7S JH JD KD (Two Pair)
+Beth - $920:    7H 7S 9C JH JC (Two Pair)
+Rip - $920:     7H 7S 8C 9C JH (Pair)
+
+Winner(s):
+You - $1215.0 (D):      7H 7S JH JD KD (Two Pair)
+
+Play again? (y/n): n
