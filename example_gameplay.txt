@@ -1,66 +1,126 @@
 ❯ python play_texas_holdem.py 
 
+======================================================
+======================================================
+    ******     *****    **   **   ******   ******     
+    **   **   *******   **  **    ******   **   **    
+    **   **   **   **   ** **     **       **   **    
+    *****     **   **   ****      ******   ******     
+    **        **   **   ** **     **       ** **      
+    **        *******   **  **    ******   **  **     
+    **         *****    **   **   ******   **   **    
+======================================================
+======================================================
+    
 John - $995 (SB) bet the blind.
 Kayce - $990 (BB) bet the blind.
 
-You - $1000 (D):        JD KD
-John - $995 (SB):       XX XX
-Kayce - $990 (BB):      XX XX
-Jamie - $1000:          XX XX
-Beth - $1000:           XX XX
-Rip - $1000:            XX XX
+You - $1000 (D):          8H 8D
+John - $995 (SB):         XX XX
+Kayce - $990 (BB):        XX XX
+Jamie - $1000:            XX XX
+Beth - $1000:             XX XX
+Rip - $1000:              XX XX
 
-Jamie - $990 called to 10
-Beth - $990 called to 10
-Rip - $990 called to 10
+Jamie - $990 called to $10.
+Beth - $990 called to $10.
+Rip - $990 called to $10.
 Call (c), Raise (r), or Fold (f): r
-Raise amount: 25
-You - $965 (D) raised by 25 to 35
-John - $965 (SB) called to 35
-Kayce - $990 (BB) folded.
+Raise amount: $15
+You - $975 (D) raised by $15 to $25.
+John - $995 (SB) folded.
+Kayce - $975 (BB) called to $25.
 Jamie - $990 folded.
-Beth - $965 called to 35
-Rip - $965 called to 35
+Beth - $975 called to $25.
+Rip - $990 folded.
 
-['7H', '4D', '9C']              (Flop) 
+['4C', '6C', '6H']              (Flop) 
 
-John - $965 (SB) checked.
-Beth - $965 checked.
-Rip - $965 checked.
+Kayce - $975 (BB) checked.
+Beth - $975 checked.
+Check (k) or Bet (b): b
+Bet amount: $50
+You - $925 (D) bet $50.
+Kayce - $975 (BB) folded.
+Beth - $975 folded.
+
+['4C', '6C', '6H', '7H']        (Turn) 
+
+
+['4C', '6C', '6H', '7H', '4H']  (River) 
+
+
+Pocket Cards:
+You - $925 (D):           8H 8D
+John - $995 (SB):         5D 9C
+Kayce - $975 (BB):        7C 8S
+Jamie - $990:             TS JS
+Beth - $975:              2H KC
+Rip - $990:               6D 7S
+
+Competing Hands:
+You - $925 (D):           6C 6H 7H 8H 8D (Two Pair)
+
+Final Pot: $150
+Winner(s):
+You - $1075.0 (D):        6C 6H 7H 8H 8D (Two Pair)
+Play again? (y/n): y
+
+Kayce - $970 (SB) bet the blind.
+Jamie - $980 (BB) bet the blind.
+
+You - $1075.0:            8S KS
+John - $995 (D):          XX XX
+Kayce - $970 (SB):        XX XX
+Jamie - $980 (BB):        XX XX
+Beth - $975:              XX XX
+Rip - $990:               XX XX
+
+Beth - $965 called to $10.
+Rip - $990 folded.
+Call (c), Raise (r), or Fold (f): c
+You - $1065.0 called to $10.
+John - $985 (D) called to $10.
+Kayce - $970 (SB) folded.
+Jamie - $980 (BB) checked.
+
+['AD', '8C', 'JD']              (Flop) 
+
+Jamie - $970 (BB) bet $10.
+Beth - $955 called to $10.
+Call (c), Raise (r), or Fold (f): c
+You - $1055.0 called to $10.
+John - $985 (D) folded.
+
+['AD', '8C', 'JD', '7S']        (Turn) 
+
+Jamie - $945 (BB) bet $25.
+Beth - $930 called to $25.
+Call (c), Raise (r), or Fold (f): r
+Raise amount: $25
+You - $1005.0 raised by $25 to $50.
+Jamie - $920 (BB) called to $50.
+Beth - $930 folded.
+
+['AD', '8C', 'JD', '7S', 'KC']  (River) 
+
+Jamie - $920 (BB) checked.
 Check (k) or Bet (b): k
 You checked.
 
-['7H', '4D', '9C', 'JH']        (Turn) 
-
-John - $965 (SB) checked.
-Beth - $965 checked.
-Rip - $945 raised by 20 to 20
-Call (c), Raise (r), or Fold (f): c
-You - $945 (D) called to 20
-John - $965 (SB) folded.
-Beth - $945 called to 20
-
-['7H', '4D', '9C', 'JH', '7S']  (River) 
-
-Beth - $920 raised by 25 to 25
-Rip - $920 called to 25
-Call (c), Raise (r), or Fold (f): c
-You - $920 (D) called to 25
-
 Pocket Cards:
-You - $920 (D):         JD KD
-John - $965 (SB):       QS AH
-Kayce - $990 (BB):      TC JS
-Jamie - $990:           5C 6H
-Beth - $920:            2D JC
-Rip - $920:             2S 8C
+You - $1005.0:            8S KS
+John - $985 (D):          4C 5S
+Kayce - $970 (SB):        8D KD
+Jamie - $920 (BB):        2S 4D
+Beth - $930:              9D 9S
+Rip - $990:               4S 9C
 
 Competing Hands:
-You - $920 (D): 7H 7S JH JD KD (Two Pair)
-Beth - $920:    7H 7S 9C JH JC (Two Pair)
-Rip - $920:     7H 7S 8C 9C JH (Pair)
+You - $1005.0:            8C 8S JD KC KS (Two Pair)
+Jamie - $920 (BB):        7S 8C JD KC AD (High Card)
 
+Final Pot: $200
 Winner(s):
-You - $1215.0 (D):      7H 7S JH JD KD (Two Pair)
-
+You - $1205.0:            8C 8S JD KC KS (Two Pair)
 Play again? (y/n): n
